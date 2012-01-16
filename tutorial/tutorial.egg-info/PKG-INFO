@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: tutorial
+Version: 0.1
+Summary: Trivial
+Home-page: http://www.github.com/aking1012/pyeggtut
+Author: aking1012.com@gmail.com
+Author-email: aking1012.com@gmail.com
+License: GPL
+Description:       trivial python module tutorial to make this seem a bit more straight-forward for noobies
+              
+Keywords: python learn egg
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Want to Be Developers
+Classifier: Topic :: Internet

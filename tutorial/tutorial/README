@@ -1,0 +1,35 @@
+simple tutorial
+
+the package name is tutorial
+
+in order to set up an egg you need a setup.py file.  you can use the one here as a template.
+you have to include subdirectory/submodules in the setup.py file or you'll get import errors.
+when you import the module you don't import the root classes directly so you need to call them like this:
+
+import tutorial
+tutorial.tutorial.helloworld()
+
+you could:
+from tutorial import tutorial
+tutorial.helloworld()
+
+i like including the entire package so you don't get some dependency hell that
+doesn't get caught during development
+
+to build(after you install setuptools):
+python setup.py bdist_egg
+
+to install:
+sudo easy_install tutorial-0.1-py2.7.egg
+
+to use:
+python
+>>>import tutorial
+>>>tutorial.tutorial.helloworld()
+
+to test before you build the egg go to the same directory as your setup.py and try the same.
+
+if it works that way and you get import errors when you install the egg you missed a module directory.
+
+you don't have to worry about creating build, dist, or egg-info directories...setuptools does that for you.
+you'll find your egg in dist
